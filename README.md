@@ -111,4 +111,5 @@ This project is licensed under the [GPL-3.0 license](LICENSE) - see the `LICENSE
 
 For any questions or suggestions, feel free to contact MrQuantum1915:
 
--   **GitHub:** Contact Me [https://github.com/MrQuantum1915]
+-   **GitHub:** [Contact Me](https://github.com/MrQuantum1915)
+-   **Email:** darshanpatel@gmail.com
