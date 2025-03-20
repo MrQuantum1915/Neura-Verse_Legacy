@@ -1,6 +1,19 @@
 # AI Playground - First Version
 
 This repository contains the first version of the "AI Playground" website, built from scratch. It's a platform designed to provide a space for experimenting with and showcasing various AI functionalities.
+## Visuals
+
+![iamge1](https://github.com/user-attachments/assets/80fe3a12-8ad2-40d1-8ba2-fa67113e1ad3)
+
+
+![image2](https://github.com/user-attachments/assets/d28383f7-3e6b-48e8-a4ad-e01e56c641f2)
+
+
+![image3](https://github.com/user-attachments/assets/428e35d1-f2e8-40ce-a79a-cf51bb48be54)
+
+
+![image4](https://github.com/user-attachments/assets/9653b775-91f0-4f31-aea1-ea0acc0f9475)
+
 
 ## Table of Contents
 
