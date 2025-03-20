@@ -76,8 +76,8 @@ function submitPromptandGetResponse() {
             // Then insert formattedHtml into your html element.
             responseElement.innerHTML += data;
 
+            Prism.highlightAll();
             responseElement.scrollIntoView({ behavior: 'smooth', block: 'end' });
-
             // typewriterEffect(responseElement, data, 10);
         })
         .catch(error => {

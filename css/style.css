@@ -28,15 +28,22 @@ body {
 }
 
 ::-webkit-scrollbar {
-    width: 12px;
+    width: 8px;
+    height: 8px;
 }
 
 ::-webkit-scrollbar-track {
     background: var(--primary-color);
 }
 
-::-webkit-scrollbar-thumb {
+::-webkit-scrollbar-thumb:vertical {
     background-image: linear-gradient(to bottom, #7b00ff 0%, #2575fc 100%);
+    border-radius: 10px;
+    /* border: 3px solid var(--primary-color); */
+}
+
+::-webkit-scrollbar-thumb:horizontal {
+    background-image: linear-gradient(to right, #7b00ff 0%, #2575fc 100%);
     border-radius: 10px;
     /* border: 3px solid var(--primary-color); */
 }
@@ -121,7 +128,7 @@ body {
     text-align: center;
 }
 
-.content p.home-page-content{
+.content p.home-page-content {
     display: flex;
     flex-direction: column;
     /* align-items: bottom; */
@@ -510,9 +517,34 @@ body {
     box-sizing: border-box;
 }
 
+.code-toolbar,
+.toolbar,
+.toolbar-item,
+.language-cpp,
+.copy-to-clipboard-button {
+
+    background-color: rgba(61, 61, 61, 0.774) !important;
+    border-radius: 15px !important;
+    margin-bottom: unset !important;
+}
+
+.toolbar,
+.toolbar-item,
+.copy-to-clipboard-button {
+    /* padding: unset !important; */
+    background-color: rgba(0, 204, 255, 0.801) !important;
+    padding-left: 0px !important;
+    padding-bottom: 0px !important;
+    padding-top: 0px !important;
+    padding-right: 0px !important;
+    /* height: 59px !important; */
+
+}
+
 .response-container div.GeminiResponse {
     padding: 29px 50px 30px 60px;
 }
+
 /* #generating-response-text{
 
 } */
@@ -521,12 +553,12 @@ body {
     display: flex;
     flex-wrap: wrap;
     position: relative;
- 
+
     /* left: 60rem; */
 }
 
 
-.userPompt{
+.userPompt {
     /* display: flex; */
 
     background-color: rgba(78, 78, 78, 0.774);
@@ -539,9 +571,10 @@ body {
 }
 
 .ul {
-    list-style-type:disc;
+    list-style-type: disc;
     list-style-position: inside;
-    list-style-image: url('https://www.w3schools.com/cssref/sqpurple.gif'); ;
+    list-style-image: url('https://www.w3schools.com/cssref/sqpurple.gif');
+    ;
     padding: 0;
     margin: 0;
 }
