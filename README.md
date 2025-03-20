@@ -105,7 +105,7 @@ Contributions are welcome! If you'd like to contribute to this project, please f
 
 ## License
 
-This project is licensed under the [GPL-3.0 license](LICENSE) - see the `LICENSE` file for details.  If there is no LICENSE file, you can add one to your repository.  I can help with that.
+This project is licensed under the [GPL-3.0 license](LICENSE) - see the `LICENSE` file for details.
 
 ## Contact
 
