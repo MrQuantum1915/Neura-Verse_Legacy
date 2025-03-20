@@ -75,8 +75,24 @@ Before you begin, ensure you have the following installed:
     -   Open your web browser and navigate to `http://localhost:<port>` (default port is usually 3000, or as defined in your .env).
 
 ## Project Structure
-
-AI-Playground/├── images/             # Contains image files used in the website├── .env.example       # Example environment variable file├── .gitignore         # Specifies intentionally untracked files that Git should ignore├── About.html         # About page content├── ContactUs.html     # Contact Us page content├── Home.html          # Home page content├── Playground.html    # Playground page content├── bg.jpg             # Background image file├── bg1.jpg            # Another background image file├── login.css          # CSS for login page├── login.html         # Login page content├── login.js           # JavaScript for login page├── omnimind.html      # Placeholder page (potentially for future AI features)├── package-lock.json  # Dependency tree for npm├── package.json       # Project configuration and dependencies├── script.js          # Main JavaScript file├── server.js          # Node.js server file├── style.css          # Main CSS file├── temp.html          # Temporary/testing HTML file└── README.md          # Project documentation (this file)
+```
+AI-Playground/
+├── css/
+│   ├── All CSS files
+├── js/
+│   ├── All JS files
+├── views/
+│   ├── All HTML Files
+├── images/
+│   ├── All Images and Logos
+├── .env.example
+├── .gitignore
+├── LICENSE
+├── package-lock.json
+├── package.json
+├── README.md
+└── server.js
+```
 ## Contributing
 
 Contributions are welcome! If you'd like to contribute to this project, please follow these steps:
