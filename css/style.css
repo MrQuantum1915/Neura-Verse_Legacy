@@ -503,9 +503,9 @@ body {
     padding-top: 14px;
     padding-bottom: 10px;
     background-color: rgba(61, 61, 61, 0.774);
-    border-top-right-radius: 15px;
-    border-bottom-left-radius: 15px;
-    border-bottom-right-radius: 15px;
+    border-top-right-radius: 35px;
+    border-bottom-left-radius: 35px;
+    border-bottom-right-radius: 35px;
     margin-bottom: 50px;
     box-sizing: border-box;
 }
