@@ -1,6 +1,6 @@
-# AI Playground - First Version (MrQuantum1915)
+# AI Playground - First Version
 
-This repository contains the first version of the "AI Playground" website, built from scratch by MrQuantum1915. It's a platform designed to provide a space for experimenting with and showcasing various AI functionalities.
+This repository contains the first version of the "AI Playground" website, built from scratch. It's a platform designed to provide a space for experimenting with and showcasing various AI functionalities.
 
 ## Table of Contents
 
