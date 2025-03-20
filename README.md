@@ -55,6 +55,7 @@ Before you begin, ensure you have the following installed:
 
     -   Create a `.env` file in the root directory based on the `.env.example` file.
     -   Add any necessary environment variables, such as database connection details or API keys.
+    -   Refer the `.env.example` file
 
     ```
     # Example .env content
