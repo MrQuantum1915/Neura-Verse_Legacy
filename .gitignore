@@ -1,5 +1,5 @@
-.env
-.venv
-.txt
+*.txt
+*.env
+*.venv
 tempCodeRunnerFile
 node_modules/
