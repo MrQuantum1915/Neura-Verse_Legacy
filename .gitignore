@@ -1,5 +1,5 @@
 .env
-
+.venv
+.txt
+tempCodeRunnerFile
 node_modules/
-
-Ideas.txt

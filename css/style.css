@@ -174,13 +174,12 @@ body {
 .content {
     display: flex;
     margin-top: 50px;
-    max-width: 80vw;
-    padding-left: 10em;
+    /* max-width: 100vw; */
     justify-content: center;
     align-items: flex-start;
     flex-wrap: wrap;
     color: white;
-    column-gap: 10px;
+    column-gap: 100px;
     row-gap: 50px;
 }
 
@@ -369,7 +368,7 @@ body {
     border-right: 2px solid grey;
     /* padding-bottom: 2em; */
     color: rgb(189, 189, 189);
-    width: 300px;
+    width: 400px;
     position: fixed;
     height: 100vh;
     background-color: var(--primary-color);

@@ -1,0 +1,79 @@
+There are numerous open-source AI models available in the market for developers to use. Below is a categorized list of some of the prominent ones:
+
+### **Open-Source Language Models**
+1. **BLOOM**:
+   - Developed by Hugging Face and BigScience, with 176 billion parameters.
+   - Multilingual capabilities (46 languages and 13 programming languages).
+   - OpenRAIL-M license for responsible AI usage[1][3][4].
+
+2. **Falcon**:
+   - Available in 7B and 40B parameter sizes.
+   - Efficient and high-performance, licensed under Apache 2.0[1][4].
+
+3. **LLaMA (Meta)**:
+   - Multiple versions, including LLaMA 2 and LLaMA 3.3 (7B, 13B, etc.).
+   - Open-source models with permissive licenses for research and commercial use[2][3].
+
+4. **Mistral**:
+   - Includes models like Mistral-8x22B (Sparse Mixture-of-Experts) and conversational models.
+   - Apache 2.0 license for many variants, supporting NLP tasks across multiple languages[4].
+
+5. **GPT-NeoX and GPT-J**:
+   - Developed by EleutherAI with sizes like 20B (NeoX) and 6B (J).
+   - Apache 2.0 license, ideal for diverse NLP tasks[3][4].
+
+6. **Vicuna**:
+   - Fine-tuned from LLaMA models, optimized for conversational AI.
+   - Open-source conversational model with strong chatbot capabilities[3].
+
+7. **XGen**:
+   - Developed by Salesforce, offering models like XGen-7B with extended context windows.
+   - Open-source except for certain instructional variants[3].
+
+8. **Google T5**:
+   - Various sizes from Small to XXL.
+   - Licensed under Apache 2.0 for high-performance NLP tasks[1].
+
+9. **BigCode Starcoder2**:
+   - Focused on code generation tasks.
+   - Open-source under Apache 2.0 license[1].
+
+10. **Qwen**:
+    - Developed by Alibaba Cloud, offering sizes up to 110B parameters.
+    - Open-sourced with quantized versions available for efficiency[4].
+
+### **Frameworks Supporting Open-Source Models**
+- **TensorFlow**, **PyTorch**, and **Keras**: Widely used frameworks that support open-source model development and fine-tuning[5].
+- **Hugging Face Transformers**: A popular library providing access to many open-source models like BLOOM, Falcon, and GPT-NeoX[3][4].
+
+### **Key Features of Open-Source Models**
+- Most open-source models are licensed under permissive licenses such as Apache 2.0 or OpenRAIL-M, allowing free usage for research and commercial purposes.
+- They span diverse domains such as multilingual capabilities (e.g., BLOOM), coding tasks (e.g., Starcoder2), conversational AI (e.g., Vicuna), and long-context processing (e.g., XGen).
+
+### **Conclusion**
+The market offers a wide variety of open-source AI models suitable for developers across different use cases, including text generation, coding assistance, multilingual translation, and chatbot development. Developers can choose models based on their specific needs, licensing terms, and computational requirements.
+
+Citations:
+[1] https://www.zdnet.com/article/the-best-open-source-ai-models-all-your-free-to-use-options-explained/
+[2] https://www.linkedin.com/pulse/choosing-best-ai-model-your-needs-early-2025-guide-r-pillai-ykx7e
+[3] https://www.datacamp.com/blog/top-open-source-llms
+[4] https://www.instaclustr.com/education/top-10-open-source-llms-for-2025/
+[5] https://www.digitalocean.com/resources/articles/open-source-ai-platforms
+[6] https://yourstory.com/2024/09/top-10-ai-models-2025
+[7] https://pieces.app/blog/open-source-llms
+[8] https://www.kdnuggets.com/top-7-open-source-llms-in-2025
+[9] https://nvidianews.nvidia.com/news/nvidia-launches-family-of-open-reasoning-ai-models-for-developers-and-enterprises-to-build-agentic-ai-platforms
+[10] https://www.opensourceforu.com/2025/03/top-10-open-source-tools-for-ai-ml/
+[11] https://www.ibm.com/think/insights/open-source-ai-tools
+[12] https://www.shakudo.io/blog/top-9-large-language-models
+[13] https://www.reddit.com/r/LocalLLM/comments/1in8iso/best_opensource_ai_models/
+[14] https://nathanbenaich.substack.com/p/your-guide-to-ai-march-2025
+[15] https://cloud.google.com/use-cases/open-source-ai
+[16] https://www.synthesia.io/post/ai-tools
+[17] https://www.linkedin.com/pulse/what-top-free-to-use-ai-models-guide-open-source-amyra-sheldon-zyfcc
+[18] https://www.pragmaticcoders.com/resources/ai-developer-tools
+[19] https://huyenchip.com/2024/03/14/ai-oss.html
+[20] https://www.lakera.ai/blog/open-source-llms
+
+---
+Answer from Perplexity: pplx.ai/share

@@ -36,12 +36,17 @@ function typewriterEffect(element, text, speed = 10) {
 //     return html;
 // }
 
-
-
+function getPageName(){
+    const path = window.location.pathname;
+    const parts = path.split('/');
+    return parts.pop();
+     // return the page name : home.html from the whole path 
+}
+const pagename = getPageName();
 
 function submitPromptandGetResponse() {
     const prompt = document.getElementById("prompt-box").value;
-    document.getElementById("prompt-box").value = '';
+    document.getElementById("prompt-box").value = ''; //sets the value in the text box to void :)
 
     const responseContainer = document.querySelector('.response-container');
     const logUserPrompt = document.createElement('div');
@@ -60,7 +65,13 @@ function submitPromptandGetResponse() {
     loadingElement.textContent = "Generating Response...";
     responseContainer.appendChild(loadingElement);
 
-    fetch(`http://localhost:3000?prompt=${encodeURIComponent(prompt)}`)
+
+    //encoding for safety standard :)
+    fetch(`http://localhost:3000?prompt=${encodeURIComponent(prompt)}`, {
+        headers: {
+            'X-Page-Origin': pagename //added custom header to send information about which page send the request
+        }
+    }) 
         .then(response => response.text())
         .then(data => {
 
@@ -76,7 +87,7 @@ function submitPromptandGetResponse() {
             // Then insert formattedHtml into your html element.
             responseElement.innerHTML += data;
 
-            Prism.highlightAll();
+            Prism.highlightAll(); //colourise the code in the code element
             responseElement.scrollIntoView({ behavior: 'smooth', block: 'end' });
             // typewriterEffect(responseElement, data, 10);
         })
