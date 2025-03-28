@@ -26,3 +26,12 @@ Other Playgrounds :-
     1) AI Speech to text API - (Assembly AI)
     2) Add a trained model of tic-tac-toe
 
+
+
+
+
+
+
+
+
+Tuned the gemini model for IIIT Vadodara and integrated the model in the website. Added the iiitv assistant's page and made some changes in the server to process differently for requests from the iiit  v assistant page
