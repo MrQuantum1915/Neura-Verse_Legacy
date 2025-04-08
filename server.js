@@ -33,7 +33,7 @@ app.get('/', async (request, response) => {
         else if(page === 'algomind.html'){
             const genAI = new GoogleGenerativeAI(process.env.Gemini_API_Key);
             const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash" });
-            const promptText = `Act as a code helper for the user. Provide coding assistance and format your response within a single <div> element. Style the output using HTML elements like <b>, <i>, <h1>, etc., for clarity and emphasis. User Prompt: ${prompt}`;
+            const promptText = `Act as a code helper for the user. You have to respond to this user prompt. Generate a single HTML <div class="GeminiResponse"> element with properly formatted content. Adjust headings (e.g., h1 to h2) and other elements accordingly. Exclude CSS, <head>, <body>, or <html> tags. Provide only the <div>...</div> content without wrapping it in code blocks or adding extra text. Do not write "Response to ....", only write the response content. User Prompt: ${prompt}`;
             const result = await model.generateContent(promptText);
             responseText = result.response.text();
             response.send(responseText);

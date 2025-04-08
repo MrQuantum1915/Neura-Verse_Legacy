@@ -3,9 +3,7 @@ function typewriterEffect(element, text, speed = 10) {
 
     function type() {
         if (index < text.length) {
-            element.textContent += text.charAt(index);
-            index++;
-            setTimeout(type, speed);
+            element.textContent += text.charAt(index);prompt
         }
     }
 
