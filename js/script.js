@@ -36,11 +36,11 @@ function typewriterEffect(element, text, speed = 10) {
 //     return html;
 // }
 
-function getPageName(){
+function getPageName() {
     const path = window.location.pathname;
     const parts = path.split('/');
     return parts.pop();
-     // return the page name : home.html from the whole path 
+    // return the page name : home.html from the whole path 
 }
 const pagename = getPageName();
 
@@ -61,8 +61,39 @@ function submitPromptandGetResponse() {
     responseContainer.appendChild(logUserPrompt);
 
     const loadingElement = document.createElement('div');
+
+
+    const loaderHTML = `
+    <!-- 7 -->
+    <!-- 8 -->
+<div class="loader loader--style8" title="7">
+  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+     width="24px" height="30px" viewBox="0 0 24 30" style="enable-background:new 0 0 50 50;" xml:space="preserve">
+    <rect x="0" y="10" width="4" height="10" fill="#333" opacity="0.2">
+      <animate attributeName="opacity" attributeType="XML" values="0.2; 1; .2" begin="0s" dur="0.6s" repeatCount="indefinite" />
+      <animate attributeName="height" attributeType="XML" values="10; 20; 10" begin="0s" dur="0.6s" repeatCount="indefinite" />
+      <animate attributeName="y" attributeType="XML" values="10; 5; 10" begin="0s" dur="0.6s" repeatCount="indefinite" />
+    </rect>
+    <rect x="8" y="10" width="4" height="10" fill="#333"  opacity="0.2">
+      <animate attributeName="opacity" attributeType="XML" values="0.2; 1; .2" begin="0.15s" dur="0.6s" repeatCount="indefinite" />
+      <animate attributeName="height" attributeType="XML" values="10; 20; 10" begin="0.15s" dur="0.6s" repeatCount="indefinite" />
+      <animate attributeName="y" attributeType="XML" values="10; 5; 10" begin="0.15s" dur="0.6s" repeatCount="indefinite" />
+    </rect>
+    <rect x="16" y="10" width="4" height="10" fill="#333"  opacity="0.2">
+      <animate attributeName="opacity" attributeType="XML" values="0.2; 1; .2" begin="0.3s" dur="0.6s" repeatCount="indefinite" />
+      <animate attributeName="height" attributeType="XML" values="10; 20; 10" begin="0.3s" dur="0.6s" repeatCount="indefinite" />
+      <animate attributeName="y" attributeType="XML" values="10; 5; 10" begin="0.3s" dur="0.6s" repeatCount="indefinite" />
+    </rect>
+  </svg>
+  <span>Thinking...</span>
+</div>
+    
+    `;
+
+
+
     loadingElement.id = "generating-response-text";
-    loadingElement.textContent = "Generating Response...";
+    loadingElement.innerHTML = loaderHTML;
     responseContainer.appendChild(loadingElement);
 
 
@@ -71,12 +102,11 @@ function submitPromptandGetResponse() {
         headers: {
             'X-Page-Origin': pagename //added custom header to send information about which page send the request
         }
-    }) 
+    })
         .then(response => response.text())
         .then(data => {
 
             responseContainer.removeChild(loadingElement);
-
 
             let responseElement = document.querySelector(".response-container");
             // responseContainer.appendChild(responseElement);

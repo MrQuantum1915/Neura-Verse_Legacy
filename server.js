@@ -56,39 +56,39 @@ app.get('/', async (request, response) => {
             Total: L = 14, T = 3, P = 10, C = 23
 
             *Courses marked with an asterisk may be offered in both Autumn and Winter Semesters.`;
-            // use the new GoogleGenAI library for roadmap.html
 
-
-            
-            const parts = promptString.split("explorationPreference:");
+            const parts = prompt.split("explorationPreference:");
+            let explorationPreferenceValue;
             if (parts.length > 1) {
-            const value = parts[1].trim();
-            const explorationPreferenceValue = value;
+                const value = parts[1].trim();
+                explorationPreferenceValue= value;
+                console.log("Exploration Preference Value:", explorationPreferenceValue);
+            }
             let promptText = "";
             if (explorationPreferenceValue === "project-based") {
-            promptText += ` The student prefers a project-based approach to exploring new tech fields instead of traditional Roadmaps.
-            Give several project ideas aligning with what they are studying right now in there curriculum.
-            
-            1 Analyze the student's current knowledge and experience (provided in the input).
-            2 Identify nearby curriculum topics.
-            3 Project ideas should be specific, creative, and unique, rather than generic.
-            4 Define the overall structure of the project, but don't tell us how to do it or step by step process, keep it open-ended.
-            5 Give atleast 6 ideas. 
+                promptText += ` The student prefers a project-based approach to exploring new tech fields instead of traditional Roadmaps.
+                Give several project ideas aligning with what they are studying right now in there curriculum.
+                
+                1 Analyze the student's current knowledge and experience (provided in the input).
+                2 Identify nearby curriculum topics.
+                3 Project ideas should be specific, creative, and unique, rather than generic.
+                4 Define the overall structure of the project, but don't tell us how to do it or step by step process, keep it open-ended.
+                5 Give atleast 6 ideas. 
 
 
-            Output rules:
-            1 Enclose all content in one <div>.
-            2 Use a new <div style="border: 1px solid; padding: 10px; margin: 10px 0;"> for each idea.
-            3 Use HTML tags for formatting (e.g., <b>, <i>, <ul>, <li>) without Markdown.
-            4 Do not add code fences
-            5 Do not specify font colors or background colors.
-            6 Ensure clear, structured, and readable output.
-            
-            User Data:
-            [${prompt}]
+                Output rules:
+                1 Enclose all content in one <div>.
+                2 Use a new <div style="border: 1px solid; padding: 10px; margin: 10px 0;"> for each idea.
+                3 Use HTML tags for formatting (e.g., <b>, <i>, <ul>, <li>) without Markdown.
+                4 Do not add code fences
+                5 Do not specify font colors or background colors.
+                6 Ensure clear, structured, and readable output.
+                
+                User Data:
+                [${prompt}]
 
-            Curriculum Structure:
-            [${curriculum}]`;
+                Curriculum Structure:
+                [${curriculum}]`;
             }
             else {
             // Prepare the prompt for Gemini
@@ -110,12 +110,12 @@ app.get('/', async (request, response) => {
             6 Ensure clear, structured, and readable output.
 
             User Data:
-            [${promptText}]
+            [${prompt}]
 
             Curriculum Structure:
             [${curriculum}]`;
             }
-            const ai = new GoogleGenAI({ apiKey: process.env.Gemini_API_Key });
+            const ai = new GoogleGenAI({ apiKey: process.env.Gemini_API_Key});
             const result = await ai.models.generateContent({
                 model: "gemini-2.0-flash",
                 contents: [promptText],
@@ -130,7 +130,7 @@ app.get('/', async (request, response) => {
 
             console.log("Grounding Metadata:", groundingMetadata);
             response.send(responseText);
-        } }
+        }
         
         else {
             const genAI = new GoogleGenerativeAI(process.env.Gemini_API_Key);

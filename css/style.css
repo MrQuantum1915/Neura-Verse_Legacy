@@ -142,7 +142,8 @@ body {
     font-style: normal;
     text-align: center;
 }
-.content a.button{
+
+.content a.button {
     text-decoration: underline;
     padding: 10px 20px;
     margin: 10px auto;
@@ -160,10 +161,12 @@ body {
     width: fit-content;
     transition: transform 0.2s ease-in-out;
 }
+
 .content a.button:hover {
     background-image: linear-gradient(to right, #a705ff 0%, #00b7ff 100%);
     transform: translateY(-5px);
 }
+
 /* .main-word {
     background-image: linear-gradient(to right, #ff0000 0%, #ae00ff, #5900ff, #00ffff);
     -webkit-background-clip: text;
@@ -303,7 +306,7 @@ body {
     position: relative;
     /* top: 10rem; */
     border-top: 2px solid;
-    border-image: linear-gradient(to right,#00ffff) 1;
+    border-image: linear-gradient(to right, #00ffff) 1;
     margin-top: 4rem;
     background-image: linear-gradient(to bottom, #000, #191919);
     color: var(--secondary-color);
@@ -602,4 +605,9 @@ body {
     ;
     padding: 0;
     margin: 0;
+}
+
+
+.generating-response-text svg path, svg rect {
+    fill: #FF6700;
 }
