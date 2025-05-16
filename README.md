@@ -1,6 +1,28 @@
 # AI Playground - First Version
 
 This repository contains the first version of the "AI Playground" website, built from scratch. It's a platform designed to provide a space for experimenting with and showcasing various AI functionalities.
+
+## Tech Stack Used
+
+<p align="center">
+    
+<img src="https://github.com/user-attachments/assets/ea17c697-fd2c-42ab-b72e-b2dd8a1dc9c3" alt="HTML5" width="100" height="100"/>
+
+<img src="https://github.com/user-attachments/assets/9a9c9119-a389-4a29-97a9-7738f3255807" alt="CSS3" width="100" height="100"/>
+    
+<img src="https://github.com/user-attachments/assets/ec9111be-10d8-45cc-9631-a0c3a5ab227b" alt="VanillaJS" width="100" height="100"/>
+    
+<img src="https://github.com/user-attachments/assets/9617a38c-60e6-4173-a862-4aa2cf5efce1" alt="PYTHON" width="100" height="100"/>
+    
+<img src="https://github.com/user-attachments/assets/314b0f9d-9dca-40bf-82ac-86dd67133836" alt="nodejs" width="100" height="100"/>
+    
+<img src="https://github.com/user-attachments/assets/63d5e289-f6de-43e9-a429-469a122e9a92" alt="expressjs" width="100" height="100"/>
+    
+<img src="https://github.com/user-attachments/assets/e1af3e33-fcaf-4d4f-b72f-f6133faf8647" alt="jupyternotebook" width="100" height="100"/>
+
+</p>
+
+
 ## Visuals
 
 ![iamge1](https://github.com/user-attachments/assets/80fe3a12-8ad2-40d1-8ba2-fa67113e1ad3)
