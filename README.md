@@ -20,6 +20,13 @@ This repository contains the first version of the "AI Playground" website, built
     
 <img src="https://github.com/user-attachments/assets/e1af3e33-fcaf-4d4f-b72f-f6133faf8647" alt="jupyternotebook" width="100" height="100"/>
 
+<br>
+<br>
+
+<img src="https://github.com/user-attachments/assets/5fca0a7d-372e-4f98-bdc4-b2463e1363cc" alt="jupyternotebook" width="600" height="300"/>
+
+
+
 </p>
 
 
