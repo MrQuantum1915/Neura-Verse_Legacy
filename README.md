@@ -1,4 +1,4 @@
-# AI Playground - First Version
+# AI Playground - First (now Legacy) Version
 
 This repository contains the first version of the "AI Playground" website, built from scratch. It's a platform designed to provide a space for experimenting with and showcasing various AI functionalities.
 
