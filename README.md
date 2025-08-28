@@ -1,4 +1,7 @@
-# AI Playground - First (now Legacy) Version
+# AI Playground - First (now Legacy) Version 
+
+## [Visit the Newer Version](https://github.com/MrQuantum1915/Neura-Verse)
+
 
 This repository contains the first version of the "AI Playground" website, built from scratch. It's a platform designed to provide a space for experimenting with and showcasing various AI functionalities.
 
