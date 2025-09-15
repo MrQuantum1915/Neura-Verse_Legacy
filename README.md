@@ -1,4 +1,4 @@
-# AI Playground - First (now Legacy) Version 
+# Neura Verse AI Playgrounds - First (now Legacy) Version 
 
 ## [Visit the Newer Version](https://github.com/MrQuantum1915/Neura-Verse)
 
